@@ -1,0 +1,93 @@
+:root{
+    --corescura: #34073D;
+    --corclara:#e65763;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: helvetica;
+    background-image: linear-gradient(to right, var(--corclara), var(--corescura));
+    color: #fff;
+    text-align: center;
+    padding-top:30px;
+}
+
+#tasks-container{
+    width:500px;
+    margin:0 auto;
+}
+
+/* form */
+#tasks-header{
+    margin-top:40px;
+}
+#add-task-form{
+    display: flex;
+}
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid var(--corescura);
+    background-color:#fff;
+    color: var(--corescura);
+    padding:15px;
+    font-size: 18px;
+    width:100%;
+}
+#add-task-form input::placeholder{
+    color: var(--corescura);
+}
+#add-task-form input:focus{
+    outline:none;
+}
+#btn-add:hover{
+    background-color: var(--corescura);
+    color:#fff;
+    transition: 0.5s;
+}
+
+/* lista */
+#task-list{
+    list-style: none;
+    padding-left: 0;
+}
+#task-list li{
+    display:flex;
+    height: 50px;
+    line-height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 3px solid var(--corescura);
+    background-color: #fff;
+    color: var(--corescura);
+    padding-left:15px;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+/* alinhando a descrição da tarefa a direita */
+#task-list li .task-title{
+    margin-right: auto;
+}
+
+#task-list li p{
+    font-size: 18px;
+}
+
+.btn-done,.btn-remove{
+    padding:10px 10px;
+}
+
+
+/* ***************** */
+/* vamos usar na parte de javascript */
+
+#task-list li.done{
+    background-color: var(--corescura);
+    color:#fff;
+    text-decoration:line-through;
+    transition: 0.5s;
+}
+
+.hide {
+    display: none !important;
+}

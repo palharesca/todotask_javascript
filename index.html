@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do Javascript</title>
+</head>
+<body>
+    <main id="tasks-container">
+        <section id="tasks-header">
+            <h2>Salve sua próxima tarefa</h2>
+            <form action="" id="add-task-form">
+                <input type="text" id="task-title" placeholder="O que vc vai fazer?">
+                <button id="btn-add" type="submit">
+                    <i class="fa fa-plus-circle fa-2x"></i>
+                </button>
+            </form>
+        </section>
+        <section id="tasks-list-container">
+            <h2>Estas são as suas tarefas:</h2>
+            <ul id="task-list">
+                <!-- foi incluido quando chegar no javascript -->
+                <li class="task-box template hide">
+                    <p class="task-title">Tarefa1</p>
+                    <button class="btn-done">
+                        <i class="fa fa-check-square fa-2x"></i>
+                    </button>
+                    <button class="btn-remove">
+                        <i class="fa fa-times-circle fa-2x"></i>
+                    </button>
+                </li>
+                <!-- **************************************** -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
